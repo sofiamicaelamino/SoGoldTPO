@@ -1,0 +1,344 @@
+/* PALETA DE COLORES HEX
+.color-1 {color: #c4b4a4;}
+.color-2 {color: #ac9e90;}
+.color-3 {color: #93877b;}
+.color-4 {color: #7b7167;}
+.color-5 {color: #625a52;}
+.color-6 {color: #4a433e;}
+.color-7 {color: #312d29;}
+.color-8 {color: #191615;} */
+
+/*Navegador*/
+
+.navegador {
+    background-color: #c4b4a4; 
+    font-size:25px; 
+    font-family:'Raleway', sans-serif;
+    font-weight: 1000;
+    color:#625a52; 
+    text-decoration:none
+}
+
+.navegador:hover {
+    font-size:25px; 
+    font-family:'Raleway', sans-serif; 
+    font-weight: 1000;
+    color:#191615; 
+    text-decoration:none}
+
+/*Flexbox*/    
+
+@media (width >= 1280px){
+ .navegador {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     align-items: stretch;
+     align-content: normal;
+   }
+ }
+ @media (800px <= width <= 1280px) {
+ .navegador {
+     display: flex;
+     flex-direction: column;
+     flex-wrap: nowrap;
+     justify-content: space-around;
+     align-items: stretch;
+     align-content: normal;
+   } 
+ } 
+ 
+ @media (width <= 800px) {
+ .navegador {
+     display: flex;
+     flex-direction: column;
+     flex-wrap: nowrap;
+     justify-content: space-around;
+     align-items: stretch;
+     align-content: normal;
+   } 
+ } 
+  
+.logo:nth-child(1) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: center;
+  order: 0;
+}
+
+.inicio:nth-child(2) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: center;
+  order: 0;
+}
+
+.productos:nth-child(3) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: center;
+  order: 0;
+}
+
+.cuidados:nth-child(4) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: center;
+  order: 0;
+}
+
+.contacto:nth-child(5) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: center;
+  order: 0;
+}
+
+/*Index*/
+
+#titulo{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+
+}
+
+#subtitulo{
+    font-size: 25px;
+    font-weight: 800;
+}
+
+/*Elementos*/
+
+h1 {
+    color: #4a433e;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 100px;
+    font-style: italic;
+    text-align: center;
+}
+
+h2 {
+    color:#625a52;
+    font-family:'Raleway', sans-serif;
+    font-weight:300;
+    font-size: 50px;
+    text-align: center;
+}
+
+h3 {
+    color: #625a52;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    text-align: center;
+}
+
+h4 {
+    color: #312d29;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+h5 {
+    color:#625a52 ;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    text-align: center;
+}
+
+P {
+    font-family: 'Raleway', sans-serif;
+    color:#4a433e;
+    text-align: center;
+}
+
+#comprar:hover {
+    color:#191615; 
+}
+
+fieldset{
+    font-family: 'Raleway', sans-serif;
+}
+
+label{
+    font-weight: bold;
+}
+
+textarea{
+    font-family:  'M PLUS Rounded 1c', sans-serif;
+}
+
+form{
+    font-family: 'Raleway', sans-serif;
+}
+
+/*Informacion general*/
+
+@media (width >= 1280px){
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: stretch;
+  }
+}
+@media (800px <= width <= 1280px) {
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: stretch;
+  } 
+} 
+
+@media (width <= 800px) {
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: stretch;
+  } 
+} 
+  
+  .flex-items:nth-child(1) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+  
+  .flex-items:nth-child(2) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+  
+  .flex-items:nth-child(3) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+
+#informacion{
+    text-align: center;
+    align-items: center;
+}
+
+/*Productos*/
+
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 30px 30px;
+    grid-auto-flow: row;
+    align-items: center;
+    justify-items: center;
+    grid-template-areas:
+      "producto-1 producto-2 producto-3 producto-4"
+      "producto-5 producto-6 producto-7 producto-8"
+      "producto-9 producto-10 prodcuto-11 producto-12";
+  }
+  
+  .producto-1 { grid-area: producto-1; }
+  
+  .producto-2 { grid-area: producto-2; }
+  
+  .producto-3 { grid-area: producto-3; }
+  
+  .producto-4 { grid-area: producto-4; }
+  
+  .producto-5 { grid-area: producto-5; }
+  
+  .producto-6 { grid-area: producto-6; }
+  
+  .producto-7 { grid-area: producto-7; }
+  
+  .producto-8 { grid-area: producto-8; }
+  
+  .producto-9 { grid-area: producto-9; }
+  
+  .producto-10 { grid-area: producto-10; }
+  
+  .prodcuto-11 { grid-area: prodcuto-11; }
+  
+  .producto-12 { grid-area: producto-12; }
+
+  /*Footer*/
+  
+  .containerfooter {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 3em 4em 1.5em 1.5em 1.5em; 
+    gap: 0px 1em; 
+    grid-template-areas: 
+      "TituloRedes"
+      "redes"
+      "datos"
+      "derechos"
+      "comision"; 
+    align-content: center; 
+    justify-items: center; 
+    align-items: stretch; 
+  }
+  .TituloRedes {
+    justify-self: center; 
+    align-self: stretch; 
+    grid-area: TituloRedes; 
+    height: 100%; 
+  }
+  .redes {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 0px 20px; 
+    grid-template-areas: 
+      ". . ."
+      "instagram twitter mail"
+      ". . ."; 
+    justify-self: center; 
+    grid-area: redes; 
+  }
+  .instagram { grid-area: instagram; }
+  .twitter { grid-area: twitter; }
+  .mail { grid-area: mail; }
+  .datos {
+    justify-self: center; 
+    grid-area: datos; 
+  }
+  .derechos {
+    justify-self: center; 
+    grid-area: derechos; 
+  }
+  .comision {
+    justify-self: center; 
+    grid-area: comision; 
+  }
