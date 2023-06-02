@@ -28,7 +28,7 @@
 
 /*Flexbox*/    
 
-@media (width >= 1000px){
+@media (width >= 800px){
  .navegador {
      display: flex;
      flex-direction: row;
@@ -38,16 +38,6 @@
      align-content: normal;
    }
  }
- @media (800px <= width <= 1000px) {
- .navegador {
-     display: flex;
-     flex-direction: column;
-     flex-wrap: nowrap;
-     justify-content: space-around;
-     align-items: stretch;
-     align-content: normal;
-   } 
- } 
  
  @media (width <= 800px) {
  .navegador {
