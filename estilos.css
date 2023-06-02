@@ -179,7 +179,7 @@ form{
 
 /*Informacion general*/
 
-@media (width >= 1280px){
+@media (width >= 1000px){
 .flex-container {
     display: flex;
     flex-direction: row;
@@ -189,7 +189,7 @@ form{
     align-content: stretch;
   }
 }
-@media (800px <= width <= 1280px) {
+@media (800px <= width <= 1000px) {
 .flex-container {
     display: flex;
     flex-direction: column;
