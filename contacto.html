@@ -48,48 +48,62 @@
 </header>
     
 <h2>Contacto</h2>
-    <!-- <form action="mostrar-datos" method="POST" autocomplete="off" target="_blank"> ASI LO TENIA-->
-    <form id="formularioContacto" method="post" autocomplete="off" onsubmit="guardarPersona(event)">   
-            <legend>Dejanos tu consulta!</legend>
-            <label for="nombre">Nombre: </label><br>
-            <input  onpaste="return false;" onCopy="return false" required type="text" size="25" name="nombre" placeholder="Ingresá tu nombre"><br>
-            <label for="apellido">Apellido: </label><br>
-            <input required type="text" size="30" maxlength="35" placeholder="Ingresá tu apellido"><br>            
-            <label for="mail">Mail: </label><br>
-            <input required type="email" placeholder="Ingresá tu mail"><br>
-            <label for="consulta">Consulta:</label><br>
-            <textarea name="consulta" id="consulta" cols="30" rows="10" placeholder="Escribí tu consulta"></textarea><br>
 
-        <input type="submit" value="Enviar">
-        <button type="reset">Resetear</button>
-    </form>
+ <div class="flex-container-contacto">
+     <div class="flex-items-contacto">
+ <form id="formulario" action="mostrar-datos" method="post" autocomplete="off" target="_blank">
+         <h4>Dejanos tu consulta!</h4>
+         <p>Te vamos a estar respondiendo lo antes posible</p>
+         <label for="nombre">Nombre: </label><br>
+         <input  
+             type="text"
+             name="nombre" 
+             id="nombre"
+             placeholder="Ingresá tu nombre"      
+             onCopy="return false"><br>
 
-    <script>
-        function guardarPersona(event) {
-            event.preventDefault();
-            let formulario = document.getElementById('formularioContacto');
-            let nombre = formulario.elements['nombre'].value;
-            let apellido = formulario.elements['apellido'].value; 
-            let mail = formulario.elements['mail'].value;
-            let consulta = formulario.elements['consulta'].value;
+        <p id="alertaNombre" hidden>Escribí un nombre válido</p>
 
-            if(!nombre || !apellido || !mail || !consulta)
-                alert("Complete todos los campos")
 
-            let persona = {
-                nombre: nombre,
-                apellido: apellido,
-                mail: mail,
-                consulta: consulta,
-            }
-            localStorage.setItem('persona', JSON.stringify(persona));
-        }
+         <label for="apellido">Apellido: </label><br>
+         <input 
+             name="apellido"
+             id="apellido"
+             type="text" 
+             placeholder="Ingresá tu apellido"><br>   
+             
+        <p id="alertaApellido" hidden >Texto de error</p>
 
-    </script>
+         <label for="mail">Mail: </label><br>
+         <input 
+             name="mail"
+             id="mail"
+             type="email" 
+             placeholder="Ingresá tu mail"><br>
 
-    <div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d821.0011835633817!2d-58.38430603043548!3d-34.604041794451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac5f236bf73%3A0x5ad2ce8d0ace0bd5!2sLibertad%20395%2C%20C1012AAG%20CABA%2C%20Argentina!5e0!3m2!1ses!2ses!4v1685204247518!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+        <p id="alertaMail" hidden>Texto de error</p>
+         <label for="consulta">Consulta:</label><br>
+         <textarea 
+             name="consulta"
+             id="consulta" 
+             cols="30" 
+             rows="10" 
+             placeholder="Escribí tu consulta"></textarea><br>
+
+     <button type="submit">Enviar Consulta</button>
+ </form>
+
+ <p id="alertaEnviada" hidden></p>
+
+
+     </div>
+     <div class="flex-items-contacto">
+            <h4>Encontranos en nuestro local:</h4>
+            <h5>Libertad 395, CABA, Argentina</h5>
+            <p>Lunes a Viernes de 9:00 a 17:30</p>
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d821.0011835633817!2d-58.38430603043548!3d-34.604041794451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac5f236bf73%3A0x5ad2ce8d0ace0bd5!2sLibertad%20395%2C%20C1012AAG%20CABA%2C%20Argentina!5e0!3m2!1ses!2ses!4v1685204247518!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+     </div>
+  </div>
 
     <footer>
         <div class="containerfooter">
