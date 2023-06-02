@@ -28,7 +28,7 @@
 
 /*Flexbox*/    
 
-@media (width >= 1280px){
+@media (width >= 1000px){
  .navegador {
      display: flex;
      flex-direction: row;
@@ -38,7 +38,7 @@
      align-content: normal;
    }
  }
- @media (800px <= width <= 1280px) {
+ @media (800px <= width <= 1000px) {
  .navegador {
      display: flex;
      flex-direction: column;
