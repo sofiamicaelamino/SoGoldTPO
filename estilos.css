@@ -282,6 +282,69 @@ form{
   
   .producto-12 { grid-area: producto-12; }
 
+/*Contacto*/
+
+@media (width >= 800px){
+  .flex-container-contacto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    }
+  }
+  
+  @media (width <= 800px) {
+    .flex-container-contacto {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: space-around;
+      align-items: stretch;
+      align-content: center;
+    } 
+  } 
+
+.flex-items-contacto:nth-child(1) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: center;
+  order: 0;
+}
+
+.flex-items-contacto:nth-child(2) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+#alertaNombre{
+  font-weight: bolder;
+  color:#191615;
+}
+
+#alertaApellido{
+  font-weight: bolder;
+  color:#191615;
+}
+
+#alertaMail{
+  font-weight: bolder;
+  color:#191615;
+}
+
+#alertaEnviada{
+  font-weight: bolder;
+  color:#191615;
+  background-color:#e3dbd3;
+}
+
   /*Footer*/
   
   .containerfooter {
